@@ -76,7 +76,7 @@ hr{
     cursor: pointer;
     background-color: #ff0000;
     color: #fff;
-    padding: 1rem 1.5rem;
+    padding: .5rem 1rem;
     font-size: 20px;
     border-radius: 0 4px 4px 0;
 }
@@ -103,9 +103,10 @@ hr{
     gap: .5rem;
     background-color: #ff0000;
     color: #f2f2f2;
-    padding: 10px 25px;
+    padding: 10px 20px;
+    padding-right: 10px;
     width: 250px;
-    border-radius: 4px;
+    border-radius: 5px;
     cursor: pointer;
     transition: all .2s easy-in-out;
     user-select: none;

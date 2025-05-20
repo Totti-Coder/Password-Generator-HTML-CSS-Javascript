@@ -3,6 +3,7 @@ const copyPass = document.querySelector(".copy");
 const btn = document.querySelector(".btn-box");
 const copiedPass = document.querySelector(".copied");
 
+//This function generates de password
 function generatePassword() {
     copiedPass.classList.remove("visible");
 
@@ -14,10 +15,9 @@ function generatePassword() {
         const randomChar = characters.charAt(Math.floor(Math.random() * characters.length));
         password += randomChar;
     }
-
     passwordGen.innerText = password;
 }
-
+// This function copies the password
 copyPass.addEventListener("click", () => {
     if (passwordGen.innerText !== "") {
         navigator.clipboard.writeText(passwordGen.innerText)
@@ -31,5 +31,5 @@ copyPass.addEventListener("click", () => {
         alert("Nothing to copy...");
     }
 });
-
+// When you click, you call the function generatePassword
 btn.addEventListener("click", generatePassword);
